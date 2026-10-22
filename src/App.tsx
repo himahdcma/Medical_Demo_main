@@ -34,7 +34,7 @@ import { AdminDelivery } from './pages/Admin/AdminDelivery';
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         {/* Main Customer & Patient Storefront Routes */}
         <Route path="/" element={<RootLayout />}>
