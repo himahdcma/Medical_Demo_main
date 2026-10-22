@@ -9,6 +9,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 // https://vite.dev/config/
 export default defineConfig({
   base: '/Medical_Demo_main/',
+  build: {
+    target: 'es2020',
+  },
   plugins: [
     react(),
     {
